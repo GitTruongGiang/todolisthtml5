@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="newdate">
+            <p class="date Day" >Day</p>
+            <p class="date Week">Week</p>
+            <p class="date Month">Month</p>
+            <p class="date Year">Year</p>
+        </div>
+            <h1 class="title">Todo List
+                <span>Get one item done at a time</span>
+            </h1>
+            <form action="#" class="form">
+                <input type="text" id="newitem">
+                <button class="submit" type="submit">➕</button>
+            </form> 
+        <ul class="task-list">
+            <li>
+               <div class="action">
+                <input type="checkbox" class="btn btn-action-done" >
+                <span class="label">HTML and Css</span>
+               </div>
+                <button class="btn btn-action-delete"> Delete</button>
+            </li>
+            <li>
+                <div class="action">
+                 <input type="checkbox" class="btn btn-action-done">
+                 <span class="label" >Learn JS</span>
+                </div>
+                 <button class="btn btn-action-delete"> Delete</button>
+             </li>
+             <li>
+                <div class="action">
+                 <input type="checkbox" class="btn btn-action-done">
+                 <span class="label" >Code a Todo List</span>
+                </div>
+                 <button class="btn btn-action-delete"> Delete</button>
+             </li>
+             <li>
+                <div class="action">
+                 <input type="checkbox" class="btn btn-action-done">
+                 <span class="label" >react js</span>
+                </div>
+                 <button class="btn btn-action-delete"> Delete</button>
+             </li>
+        </ul>
+        <div class="filter-wrapper">
+            <label for="filter" class="filter-label">show incompleted tasks only</label>
+            <input type="checkbox" id="filter">
+        </div>
+    </div>
+    <script src="./todoList.js"></script>
+</body>
+</html>

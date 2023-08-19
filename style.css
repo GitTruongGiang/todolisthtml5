@@ -1,0 +1,116 @@
+*,
+::before,
+::after
+{
+    box-sizing: border-box;
+}
+.container{
+   max-width: 500px;
+   background-color: rgb(209, 185, 253);
+   font-family: "DM sans", sans-serif;
+   margin: 4rem auto;
+   padding: 2rem 3rem 3rem;
+   color: rgb(71, 71, 71);
+   box-shadow: 5px 5px 0 0 rgb(100 100 100 / 10%);
+   border-radius: 15px;
+   position: relative;
+}
+.newdate {
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+.date:hover{
+    text-decoration: underline;
+}
+.title {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid rgba(0, 53, 122, 0.3);
+}
+.title span {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+.task-list {
+    padding: 0;
+}
+.task-list li {
+    list-style: none;
+    padding: 1.1rem 3rem;
+    background-color:rgb(255, 255, 255 , 0.3);
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0;
+    transform-origin: top left;
+}
+.task-list .label
+{
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+}
+.task-list .done .label {
+    transition: opacity 0.2 linear;
+    text-decoration: line-through;
+}
+.task-list .btn-action-done{
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+    border: 1px solid rgba(201, 201, 201, 0.3);
+}
+
+.fall {
+    transform: rotate(10deg);
+    transition: 0.3s ease;
+    opacity: 0;
+}
+.task-list .btn-action-delete {
+    height: 2.2rem;
+    width: 4.2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgba(202, 202, 202, 0.3);
+}
+.filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.filter-wrapper #filter {
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+}
+.form {
+    text-align: right;
+    margin-right: 1.5rem;
+}
+.form .submit{
+    border-radius: 50%;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255 , 0.3);
+}
+.form #newitem {
+    height: 2.7rem;
+    padding-right: 9.6rem;
+    margin-right: 0.5rem;
+    flex-grow: 1;
+    margin-left: 0;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(255, 255, 255 , 0.3);
+    outline: none;
+}
